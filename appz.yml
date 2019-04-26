@@ -1,0 +1,24 @@
+app:
+  name: NewsFeed
+  code: NEWSFEED
+  notify: appz@cloudbourne.co
+
+build:
+  version: 0.4
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: newsfeed
+  image_name: myco/newsfeed
+
+deploy:
+  context: myco/DEV
+  replicas: 1
+  port:
+  - 8080
+
+monitor:
+  notify: appzops@cloudbourne.co      
+
+properties:
+  revision : 26
