@@ -22,3 +22,5 @@ monitor:
 
 properties:
   revision : 28
+  LOG_LINES : 50
+  LOG_INTERVAL : 15 
