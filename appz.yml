@@ -21,6 +21,6 @@ monitor:
   notify: appzops@cloudbourne.co      
 
 properties:
-  revision : 30
+  revision : 31
   LOG_LINES : 50
   LOG_INTERVAL : 15 
